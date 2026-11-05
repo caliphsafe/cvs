@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://carlos-vinyl-siding.vercel.app/sitemap.xml

@@ -18,5 +18,6 @@ The site is static and does not send customer information to a server. After vis
 - `index.html` and the `services/`, `gallery/`, and `contact/` page directories
 - `styles.css` and `script.js`
 - `assets/carlos-vinyl-siding.png` and `assets/favicon.svg`
+- `robots.txt` and `sitemap.xml` for search engine discovery
 
 The pages are plain HTML, CSS, and JavaScript. No package manager, build step, package lockfile, or framework is required. Facebook controls the availability and appearance of the embedded project posts; each post also has a direct Facebook link.
