@@ -2,31 +2,11 @@
   "use strict";
 
   const projects = {
-    "siding-progress": {
-      title: "Siding work in progress",
-      date: "September 27, 2026",
-      url: "https://www.facebook.com/carlosvinylsiding/posts/1553919186535565:953175407256444"
-    },
-    "before-after-july-one": {
-      title: "Before & After: Exterior Siding",
-      date: "July 19, 2026",
-      url: "https://www.facebook.com/carlosvinylsiding/posts/1494383739155777"
-    },
-    "before-after-july-two": {
-      title: "Before & After: Home Exterior",
-      date: "July 19, 2026",
-      url: "https://www.facebook.com/carlosvinylsiding/posts/1494380555822762"
-    },
-    "double-four-siding": {
-      title: "New Double 4 vinyl siding",
-      date: "Spring 2026",
-      url: "https://www.facebook.com/carlosvinylsiding/posts/1432775595316592"
-    },
-    "cedar-impressions": {
-      title: "Cedar Impressions vinyl siding",
-      date: "May 2026",
-      url: "https://www.facebook.com/carlosvinylsiding/posts/1432176368709848"
-    }
+    "siding-progress": { title: "Siding installation in progress", date: "Recent project", image: "../assets/gallery/latest-progress.jpg" },
+    "before-after-july-one": { title: "Exterior siding transformation", date: "Before & after", image: "../assets/gallery/july-siding-before.jpg" },
+    "before-after-july-two": { title: "Home exterior transformation", date: "Before & after", image: "../assets/gallery/july-exterior-after.jpg" },
+    "double-four-siding": { title: "New Double 4 vinyl siding", date: "Vinyl siding", image: "../assets/gallery/double-four-after.jpg" },
+    "cedar-impressions": { title: "Cedar Impressions vinyl siding", date: "Vinyl siding", image: "../assets/gallery/cedar-impressions.jpg" }
   };
 
   const setUpNavigation = () => {
@@ -59,42 +39,7 @@
     });
   };
 
-  const setUpFacebookEmbeds = () => {
-    document.querySelectorAll("[data-fb-embed]").forEach((container) => {
-      const project = projects[container.dataset.fbEmbed];
-      if (!project) return;
 
-      const width = Math.max(280, Math.min(500, Math.floor(container.parentElement.clientWidth || 500)));
-      const frame = document.createElement("iframe");
-      const embedUrl = new URL("https://www.facebook.com/plugins/post.php");
-      embedUrl.searchParams.set("href", project.url);
-      embedUrl.searchParams.set("show_text", "true");
-      embedUrl.searchParams.set("width", String(width));
-
-      frame.src = embedUrl.toString();
-      frame.title = `Facebook project post: ${project.title}`;
-      frame.loading = "lazy";
-      frame.referrerPolicy = "strict-origin-when-cross-origin";
-      frame.setAttribute("allow", "encrypted-media; picture-in-picture; web-share");
-      frame.style.setProperty("--embed-height", `${container.dataset.height || 590}px`);
-
-      const placeholder = container.parentElement.querySelector("[data-embed-placeholder]");
-      if (placeholder) {
-        const fallbackLink = placeholder.querySelector("span:last-child");
-        if (fallbackLink) {
-          const link = document.createElement("a");
-          link.href = project.url;
-          link.target = "_blank";
-          link.rel = "noopener noreferrer";
-          link.textContent = "Open the Facebook post";
-          fallbackLink.replaceWith(link);
-        }
-        frame.addEventListener("load", () => placeholder.remove(), { once: true });
-      }
-
-      container.append(frame);
-    });
-  };
 
   const fillCurrentYear = () => {
     const year = String(new Date().getFullYear());
@@ -120,8 +65,10 @@
       const project = projects[projectId];
       if (!project || !referencePanel || !emptyReference || !referenceValue) return;
       document.querySelector("#reference-title").textContent = project.title;
+      const referenceImage = document.querySelector("#reference-image");
+      if (referenceImage) { referenceImage.src = project.image; referenceImage.alt = `${project.title} selected as a gallery reference`; }
       document.querySelector("#reference-date").textContent = project.date;
-      referenceValue.value = `${project.title} — ${project.url}`;
+      referenceValue.value = `${project.title} — ${project.date}: ${new URL(project.image, window.location.href).href}`;
       referencePanel.hidden = false;
       emptyReference.hidden = true;
     };
@@ -229,7 +176,6 @@
   };
 
   setUpNavigation();
-  setUpFacebookEmbeds();
   fillCurrentYear();
   setUpQuoteForm();
 })();

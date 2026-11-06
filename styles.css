@@ -95,16 +95,9 @@ button { color: inherit; }
 .hero-visual-top { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 2px 2px 12px; color: var(--muted); font-size: 10px; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; }
 .hero-visual-top a { color: var(--green); letter-spacing: .02em; text-transform: none; }
 .hero-visual-top a span { color: #9c7510; font-size: 15px; }
-.hero-project-frame { position: relative; min-height: 500px; overflow: hidden; background: #e9e7dd; }
-.facebook-embed { width: 100%; height: 100%; }
-.facebook-embed iframe { display: block; width: 100%; height: var(--embed-height, 580px); border: 0; background: #fff; }
-.hero-project-frame .facebook-embed iframe { height: 570px; }
-.embed-placeholder { position: absolute; inset: 0; z-index: 0; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-end; gap: 9px; padding: 24px; color: var(--ink); background: linear-gradient(180deg, rgba(247,245,237,.1), rgba(247,245,237,.92)), repeating-linear-gradient(135deg, rgba(24,110,69,.08) 0 1px, transparent 1px 12px); }
-.embed-placeholder strong { max-width: 340px; font-family: var(--serif); font-size: 23px; font-weight: 500; line-height: 1.15; }
-.embed-placeholder span { color: var(--muted); font-size: 12px; }
-.embed-placeholder a { color: var(--green); font-size: 12px; font-weight: 750; text-decoration: underline; text-underline-offset: 3px; }
-.embed-placeholder .placeholder-label { color: var(--green); font-size: 10px; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
-.facebook-embed:has(iframe) + .embed-placeholder { display: none; }
+.hero-project-frame { position: relative; height: 570px; overflow: hidden; background: #e9e7dd; }
+.hero-project-photo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.hero-photo-tag { position: absolute; right: 15px; bottom: 15px; padding: 9px 12px; color: #fff; background: rgba(25,35,29,.85); font-size: 10px; font-weight: 750; letter-spacing: .07em; text-transform: uppercase; }
 .hero-image-caption { display: flex; align-items: center; gap: 8px; padding: 13px 2px 0; color: var(--muted); font-size: 10px; font-weight: 650; letter-spacing: .025em; }
 .caption-pin svg { width: 14px; fill: none; stroke: var(--green); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 .hero-corner-stamp { position: absolute; right: -27px; bottom: 34px; display: flex; width: 68px; height: 68px; flex-direction: column; align-items: center; justify-content: center; color: var(--ink); border: 1px solid var(--ink); border-radius: 50%; background: var(--gold); font-size: 13px; font-weight: 900; line-height: 1.05; text-align: center; transform: rotate(9deg); }
@@ -216,19 +209,22 @@ button { color: inherit; }
 .gallery-note { max-width: 320px; margin: 0 0 4px; color: var(--muted); font-size: 11px; line-height: 1.7; }
 .project-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 26px; align-items: start; }
 .project-card { min-width: 0; border: 1px solid var(--line); background: #fff; box-shadow: 0 7px 24px rgba(31,39,32,.06); }
+.project-card-featured { grid-column: 1 / -1; }
+.project-card-featured .project-photos img { aspect-ratio: 1.8 / 1; object-position: center 42%; }
 .project-card-meta { display: flex; min-height: 47px; align-items: center; justify-content: space-between; gap: 15px; padding: 0 16px; border-bottom: 1px solid rgba(29,33,31,.08); }
 .project-type { display: inline-flex; align-items: center; gap: 8px; color: var(--green); font-size: 9px; font-weight: 850; letter-spacing: .11em; text-transform: uppercase; }
 .project-type::before { width: 7px; height: 7px; border-radius: 50%; content: ""; background: var(--gold); }
-.post-link { color: var(--muted); font-size: 10px; font-weight: 650; }
-.post-link span { color: var(--green); font-size: 14px; }
-.project-embed-wrap { position: relative; min-height: 470px; overflow: hidden; background: #f0efe9; }
-.project-embed-wrap .facebook-embed iframe { min-height: 470px; height: var(--embed-height, 590px); }
-.project-embed-wrap .embed-placeholder { padding: 25px; }
+.project-meta-label { color: var(--muted); font-size: 9px; font-weight: 650; letter-spacing: .03em; }
+.project-photos { overflow: hidden; background: #e7e5dc; }
+.project-photos figure { position: relative; min-width: 0; margin: 0; }
+.project-photos img { display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+.project-photos-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px; }
+.project-photos figcaption { position: absolute; bottom: 9px; left: 9px; padding: 5px 7px; color: white; background: rgba(24,32,27,.8); font-size: 8px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
 .project-card-copy { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 17px 18px; }
 .project-card-copy h3 { margin: 0; font-family: var(--serif); font-size: 21px; font-weight: 500; letter-spacing: -.02em; line-height: 1.15; }
 .project-card-copy p { margin: 6px 0 0; color: var(--muted); font-size: 10px; line-height: 1.45; }
 .project-card-copy .button { flex: 0 0 auto; }
-.gallery-footnote { margin: 24px 0 0; color: var(--muted); font-size: 10px; }
+.review-context { margin-top: 20px; color: var(--green); font-size: 11px; font-weight: 750; }
 
 .contact-intro { position: relative; overflow: hidden; padding: 65px 0 45px; background: var(--paper-deep); }
 .contact-intro::after { position: absolute; top: -150px; right: 9%; width: 390px; height: 390px; border: 1px solid rgba(24,110,69,.15); border-radius: 50%; content: ""; }
@@ -297,8 +293,7 @@ button { color: inherit; }
 .field-error:not(:empty) { min-height: 15px; }
 .reference-panel { display: flex; align-items: center; gap: 13px; margin: 0 0 15px; padding: 14px; border: 1px solid rgba(24,110,69,.35); background: #edf4ee; }
 .reference-panel[hidden] { display: none; }
-.reference-icon { display: flex; width: 39px; height: 39px; flex: 0 0 auto; align-items: center; justify-content: center; border-radius: 50%; color: var(--green); background: #dceade; }
-.reference-icon svg { width: 20px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.reference-thumbnail { width: 62px; height: 48px; flex: 0 0 auto; object-fit: cover; }
 .reference-panel > div:nth-child(2) { display: flex; min-width: 0; flex-direction: column; gap: 2px; }
 .reference-eyebrow { color: var(--green); font-size: 8px; font-weight: 850; letter-spacing: .12em; text-transform: uppercase; }
 .reference-panel strong { overflow: hidden; font-size: 11px; text-overflow: ellipsis; white-space: nowrap; }
@@ -335,7 +330,7 @@ button { color: inherit; }
 
 @media (min-width: 1450px) {
   .home-hero { padding-block: 86px 70px; }
-  .hero-project-frame .facebook-embed iframe { height: 620px; }
+  .hero-project-frame { height: 620px; }
 }
 @media (max-width: 1020px) {
   .container { width: min(100% - 40px, 900px); }
@@ -379,8 +374,7 @@ button { color: inherit; }
   .hero-assurances { gap: 11px 18px; margin-top: 21px; font-size: 9px; }
   .hero-visual { max-width: 520px; justify-self: center; padding: 11px 11px 14px; }
   .hero-visual-top { font-size: 8px; }
-  .hero-project-frame { min-height: 430px; }
-  .hero-project-frame .facebook-embed iframe { height: 520px; }
+  .hero-project-frame { height: 430px; }
   .hero-corner-stamp { right: -13px; bottom: 31px; width: 57px; height: 57px; font-size: 11px; }
   .section { padding: 64px 0; }
   .section-heading-row { align-items: flex-start; flex-direction: column; gap: 16px; margin-bottom: 25px; }
@@ -429,12 +423,9 @@ button { color: inherit; }
   .gallery-heading h2 { font-size: 36px; }
   .gallery-note { max-width: 500px; }
   .project-grid { grid-template-columns: minmax(0,1fr); gap: 18px; }
-  .project-embed-wrap { min-height: 420px; }
-  .project-embed-wrap .facebook-embed iframe { min-height: 420px; height: var(--embed-height, 540px); }
   .project-card-copy { gap: 14px; padding: 15px; }
   .project-card-copy h3 { font-size: 20px; }
   .project-card-meta { padding-inline: 12px; }
-  .post-link { font-size: 9px; }
   .contact-intro { padding: 47px 0 31px; }
   .contact-intro-grid { align-items: flex-start; flex-direction: column; gap: 23px; }
   .contact-intro h1 { font-size: clamp(46px, 11vw, 62px); }

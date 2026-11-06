@@ -4,9 +4,9 @@ A responsive, buildless website for Carlos Vinyl Siding, a Portuguese family-own
 
 ## Pages
 
-- Home: company introduction, featured Facebook project, service overview, review, and quote calls to action.
+- Home: company introduction, featured local project photo, service overview, review, and quote calls to action.
 - Services: core specialties and related exterior work requests.
-- Gallery: five recent public Facebook project posts with links that attach a selected project to the quote form.
+- Gallery: five recent projects represented by locally hosted images and project descriptions; each card can attach its project reference to the quote form.
 - Contact: detailed quote request form for contact details, property, service selection, schedule, budget, project notes, and an optional gallery reference.
 
 ## Contact request flow
@@ -20,4 +20,4 @@ The site is static and does not send customer information to a server. After vis
 - `assets/carlos-vinyl-siding.png` and `assets/favicon.svg`
 - `robots.txt` and `sitemap.xml` for search engine discovery
 
-The pages are plain HTML, CSS, and JavaScript. No package manager, build step, package lockfile, or framework is required. Facebook controls the availability and appearance of the embedded project posts; each post also has a direct Facebook link.
+The pages are plain HTML, CSS, and JavaScript. No package manager, build step, package lockfile, or framework is required. Project gallery photos are stored locally under `assets/gallery/`, so the gallery does not depend on embedded social posts.
