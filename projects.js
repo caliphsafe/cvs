@@ -1,7 +1,7 @@
 window.CVS_PROJECTS = [
   {
     "id": "coastal-blue",
-    "title": "Coastal blue siding, finished in detail",
+    "title": "Coastal blue siding",
     "short": "Coastal blue",
     "category": "Siding transformation",
     "description": "A blue exterior with crisp white window surrounds and roof-edge details. Follow the home from its original exterior through the finished siding.",
@@ -72,8 +72,8 @@ window.CVS_PROJECTS = [
   },
   {
     "id": "complete-exterior",
-    "title": "New siding, trim, gutters and shutters",
-    "short": "Classic white",
+    "title": "Siding, trim and gutters",
+    "short": "Siding & gutters",
     "category": "Siding, trim, gutters & shutters",
     "description": "Old vinyl siding was removed and replaced, with new aluminum trim, gutters and shutters completing the exterior. The full photo set follows the work around every side of the home.",
     "count": 11,
@@ -83,74 +83,74 @@ window.CVS_PROJECTS = [
         "src": "/assets/projects/complete-exterior/01.jpg",
         "thumb": "/assets/projects/complete-exterior/01-thumb.jpg",
         "stage": "During",
-        "alt": "Classic white: during view 1"
+        "alt": "Siding & gutters: during view 1"
       },
       {
         "src": "/assets/projects/complete-exterior/02.jpg",
         "thumb": "/assets/projects/complete-exterior/02-thumb.jpg",
         "stage": "During",
-        "alt": "Classic white: during view 2"
+        "alt": "Siding & gutters: during view 2"
       },
       {
         "src": "/assets/projects/complete-exterior/03.jpg",
         "thumb": "/assets/projects/complete-exterior/03-thumb.jpg",
         "stage": "During",
-        "alt": "Classic white: during view 3"
+        "alt": "Siding & gutters: during view 3"
       },
       {
         "src": "/assets/projects/complete-exterior/04.jpg",
         "thumb": "/assets/projects/complete-exterior/04-thumb.jpg",
         "stage": "During",
-        "alt": "Classic white: during view 4"
+        "alt": "Siding & gutters: during view 4"
       },
       {
         "src": "/assets/projects/complete-exterior/05.jpg",
         "thumb": "/assets/projects/complete-exterior/05-thumb.jpg",
         "stage": "During",
-        "alt": "Classic white: during view 5"
+        "alt": "Siding & gutters: during view 5"
       },
       {
         "src": "/assets/projects/complete-exterior/06.jpg",
         "thumb": "/assets/projects/complete-exterior/06-thumb.jpg",
         "stage": "After",
-        "alt": "Classic white: after view 6"
+        "alt": "Siding & gutters: after view 6"
       },
       {
         "src": "/assets/projects/complete-exterior/07.jpg",
         "thumb": "/assets/projects/complete-exterior/07-thumb.jpg",
         "stage": "After",
-        "alt": "Classic white: after view 7"
+        "alt": "Siding & gutters: after view 7"
       },
       {
         "src": "/assets/projects/complete-exterior/08.jpg",
         "thumb": "/assets/projects/complete-exterior/08-thumb.jpg",
         "stage": "After",
-        "alt": "Classic white: after view 8"
+        "alt": "Siding & gutters: after view 8"
       },
       {
         "src": "/assets/projects/complete-exterior/09.jpg",
         "thumb": "/assets/projects/complete-exterior/09-thumb.jpg",
         "stage": "After",
-        "alt": "Classic white: after view 9"
+        "alt": "Siding & gutters: after view 9"
       },
       {
         "src": "/assets/projects/complete-exterior/10.jpg",
         "thumb": "/assets/projects/complete-exterior/10-thumb.jpg",
         "stage": "After",
-        "alt": "Classic white: after view 10"
+        "alt": "Siding & gutters: after view 10"
       },
       {
         "src": "/assets/projects/complete-exterior/11.jpg",
         "thumb": "/assets/projects/complete-exterior/11-thumb.jpg",
         "stage": "After",
-        "alt": "Classic white: after view 11"
+        "alt": "Siding & gutters: after view 11"
       }
     ]
   },
   {
     "id": "vinyl-revival",
-    "title": "New vinyl siding on a cottage home",
-    "short": "Cottage renewal",
+    "title": "Cottage vinyl siding",
+    "short": "Cottage siding",
     "category": "New vinyl siding",
     "description": "A warm, weathered exterior gives way to blue vinyl siding and a clean white outline. Explore the original home, the work in progress and the finished result.",
     "count": 10,
@@ -160,70 +160,70 @@ window.CVS_PROJECTS = [
         "src": "/assets/projects/vinyl-revival/01.jpg",
         "thumb": "/assets/projects/vinyl-revival/01-thumb.jpg",
         "stage": "Before",
-        "alt": "Cottage renewal: before view 1"
+        "alt": "Cottage siding: before view 1"
       },
       {
         "src": "/assets/projects/vinyl-revival/02.jpg",
         "thumb": "/assets/projects/vinyl-revival/02-thumb.jpg",
         "stage": "Before",
-        "alt": "Cottage renewal: before view 2"
+        "alt": "Cottage siding: before view 2"
       },
       {
         "src": "/assets/projects/vinyl-revival/03.jpg",
         "thumb": "/assets/projects/vinyl-revival/03-thumb.jpg",
         "stage": "Before",
-        "alt": "Cottage renewal: before view 3"
+        "alt": "Cottage siding: before view 3"
       },
       {
         "src": "/assets/projects/vinyl-revival/04.jpg",
         "thumb": "/assets/projects/vinyl-revival/04-thumb.jpg",
         "stage": "During",
-        "alt": "Cottage renewal: during view 4"
+        "alt": "Cottage siding: during view 4"
       },
       {
         "src": "/assets/projects/vinyl-revival/05.jpg",
         "thumb": "/assets/projects/vinyl-revival/05-thumb.jpg",
         "stage": "During",
-        "alt": "Cottage renewal: during view 5"
+        "alt": "Cottage siding: during view 5"
       },
       {
         "src": "/assets/projects/vinyl-revival/06.jpg",
         "thumb": "/assets/projects/vinyl-revival/06-thumb.jpg",
         "stage": "After",
-        "alt": "Cottage renewal: after view 6"
+        "alt": "Cottage siding: after view 6"
       },
       {
         "src": "/assets/projects/vinyl-revival/07.jpg",
         "thumb": "/assets/projects/vinyl-revival/07-thumb.jpg",
         "stage": "After",
-        "alt": "Cottage renewal: after view 7"
+        "alt": "Cottage siding: after view 7"
       },
       {
         "src": "/assets/projects/vinyl-revival/08.jpg",
         "thumb": "/assets/projects/vinyl-revival/08-thumb.jpg",
         "stage": "After",
-        "alt": "Cottage renewal: after view 8"
+        "alt": "Cottage siding: after view 8"
       },
       {
         "src": "/assets/projects/vinyl-revival/09.jpg",
         "thumb": "/assets/projects/vinyl-revival/09-thumb.jpg",
         "stage": "After",
-        "alt": "Cottage renewal: after view 9"
+        "alt": "Cottage siding: after view 9"
       },
       {
         "src": "/assets/projects/vinyl-revival/10.jpg",
         "thumb": "/assets/projects/vinyl-revival/10-thumb.jpg",
         "stage": "After",
-        "alt": "Cottage renewal: after view 10"
+        "alt": "Cottage siding: after view 10"
       }
     ]
   },
   {
     "id": "double-four",
-    "title": "New Double 4 vinyl siding",
+    "title": "Double 4 vinyl siding",
     "short": "Double 4 siding",
     "category": "Double 4 vinyl siding",
-    "description": "New Double 4 vinyl siding brings a consistent finish to this single-story home. See the original exterior and the completed work in daylight and at dusk.",
+    "description": "Double 4 vinyl siding brings a consistent finish to this single-story home. See the original exterior and the completed work in daylight and at dusk.",
     "count": 9,
     "cover": 9,
     "photos": [
@@ -285,8 +285,8 @@ window.CVS_PROJECTS = [
   },
   {
     "id": "neighborhood-renewal",
-    "title": "Before and after: an exterior refresh",
-    "short": "Neighborhood renewal",
+    "title": "Exterior before and after",
+    "short": "Exterior update",
     "category": "Exterior transformation",
     "description": "A complete set of project views captures the work around the porches, windows and siding, followed by the finished exterior.",
     "count": 5,
@@ -296,31 +296,31 @@ window.CVS_PROJECTS = [
         "src": "/assets/projects/neighborhood-renewal/01.jpg",
         "thumb": "/assets/projects/neighborhood-renewal/01-thumb.jpg",
         "stage": "During",
-        "alt": "Neighborhood renewal: during view 1"
+        "alt": "Exterior update: during view 1"
       },
       {
         "src": "/assets/projects/neighborhood-renewal/02.jpg",
         "thumb": "/assets/projects/neighborhood-renewal/02-thumb.jpg",
         "stage": "During",
-        "alt": "Neighborhood renewal: during view 2"
+        "alt": "Exterior update: during view 2"
       },
       {
         "src": "/assets/projects/neighborhood-renewal/03.jpg",
         "thumb": "/assets/projects/neighborhood-renewal/03-thumb.jpg",
         "stage": "After",
-        "alt": "Neighborhood renewal: after view 3"
+        "alt": "Exterior update: after view 3"
       },
       {
         "src": "/assets/projects/neighborhood-renewal/04.jpg",
         "thumb": "/assets/projects/neighborhood-renewal/04-thumb.jpg",
         "stage": "After",
-        "alt": "Neighborhood renewal: after view 4"
+        "alt": "Exterior update: after view 4"
       },
       {
         "src": "/assets/projects/neighborhood-renewal/05.jpg",
         "thumb": "/assets/projects/neighborhood-renewal/05-thumb.jpg",
         "stage": "After",
-        "alt": "Neighborhood renewal: after view 5"
+        "alt": "Exterior update: after view 5"
       }
     ]
   }
