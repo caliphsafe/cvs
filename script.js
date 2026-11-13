@@ -503,3 +503,38 @@
     openAlbum(params.get('project'), params.get('photo'));
   }
 })();
+
+// Carlos Vinyl Siding ownership and experience messaging.
+// Runs after the existing page content loads. Preserves all gallery and quote-form logic.
+(() => {
+  'use strict';
+  const tagline = 'Family Owned With 20+ Years Of Experience';
+  const replacements = [
+    [/Portuguese family owned\. New Bedford built\./gi, tagline],
+    [/Portuguese family[- ]owned/gi, tagline],
+    [/Portuguese roots\. Local pride\./gi, tagline]
+  ];
+  const rewrite = value => replacements.reduce(
+    (text, [pattern, replacement]) => text.replace(pattern, replacement), value
+  );
+  const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+  let node;
+  while ((node = walker.nextNode())) {
+    if (node.parentElement?.closest('script,style,textarea')) continue;
+    const updated = rewrite(node.nodeValue);
+    if (updated !== node.nodeValue) node.nodeValue = updated;
+  }
+  for (const meta of document.querySelectorAll('meta[content]')) {
+    const value = meta.getAttribute('content');
+    const updated = rewrite(value);
+    if (value !== updated) meta.setAttribute('content', updated);
+  }
+  for (const script of document.querySelectorAll('script[type="application/ld+json"]')) {
+    const updated = rewrite(script.textContent);
+    if (updated !== script.textContent) script.textContent = updated;
+  }
+  const familyHeading = document.querySelector('.family-title h2');
+  if (familyHeading) {
+    familyHeading.innerHTML = 'Family Owned<br><em>With 20+ Years Of Experience</em>';
+  }
+})();
